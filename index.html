@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy 2 Months, Baby ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Handwritten font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="heart" style="left: 10%">❤️</div>
+    <div class="heart" style="left: 25%">❤️</div>
+    <div class="heart" style="left: 40%">❤️</div>
+    <div class="heart" style="left: 60%">❤️</div>
+    <div class="heart" style="left: 80%">❤️</div>
+
+    <audio id="bgMusic" loop>
+      <source src="music/Until_I_Found_You.mp3" type="audio/mp3" />
+    </audio>
+
+    <button id="musicBtn">🎵 Music</button>
+
+    <!-- PASSWORD SCREEN -->
+    <div id="password-screen" class="page active">
+      <div class="card">
+        <h1>Before entering ❤️</h1>
+
+        <p>The date we became us ✨</p>
+
+        <input type="password" id="passwordInput" placeholder="DDMMYYYY" />
+
+        <button onclick="checkPassword()">Enter Our Story ❤️</button>
+      </div>
+    </div>
+
+    <!-- PAGE 1 -->
+    <section class="page hidden" id="cover-page">
+      <div class="overlay">
+        <div class="content">
+          <h1>Happy 2 Months, My Love ❤️</h1>
+
+          <p>
+            From the day you said yes to today, every moment with you has become
+            one of my favorite memories.
+          </p>
+
+          <button onclick="nextPage()">Begin Our Story ✨</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page hidden">
+      <div class="story-card">
+        <h2>🌻 The Day I First Saw You 🌸</h2>
+
+        <p>
+          The first time I saw you was at ATP Gym. You had come with your
+          brother and I still remember that oversized brown and white T-shirt.
+        </p>
+
+        <p>From that moment, I knew I wanted to know more about you.</p>
+
+        <p>
+          Little did I know that one day, the girl I noticed at the gym would
+          become my favorite person. ❤️
+        </p>
+      </div>
+
+      <div class="navigation">
+        <button onclick="prevPage()">⬅ Previous</button>
+
+        <button onclick="nextPage()">Next ➡</button>
+      </div>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page hidden">
+      <div class="story-card">
+        <h2>☕ Our First Date ❤️ 🌻</h2>
+
+        <p>
+          I came straight from the office and waited outside your college.
+          Little did I know those two hours would become one of my favorite
+          memories.
+        </p>
+
+        <div class="gallery">
+          <img src="images/IMG20260422172832.jpg" />
+          <img src="images/IMG20260422172540.jpg" />
+          <img src="images/IMG20260422174950.jpg" />
+          <img src="images/IMG20260422174840.jpg" />
+          <img src="images/IMG20260422174920.jpg" />
+          <img src="images/IMG20260422174829.jpg" />
+        </div>
+      </div>
+
+      <div class="navigation">
+        <button onclick="prevPage()">⬅ Previous</button>
+
+        <button onclick="nextPage()">Next ➡</button>
+      </div>
+    </section>
+
+    <!-- PAGE 4 -->
+    <section class="page hidden">
+      <div class="story-card">
+        <h2>The Beginning Of Us ❤️</h2>
+
+        <p>
+          One of the most special things I've ever done was writing that
+          handwritten note asking you to be my girlfriend.
+        </p>
+
+        <p>Thank you for saying yes on 16 April 2026. ❤️</p>
+      </div>
+
+      <div class="navigation">
+        <button onclick="prevPage()">⬅ Previous</button>
+
+        <button onclick="nextPage()">Next ➡</button>
+      </div>
+    </section>
+
+    <!-- PAGE 5 -->
+    <section class="page hidden">
+      <div class="story-card">
+        <h2>📸 Little Moments, Big Memories ✨</h2>
+
+        <div class="gallery">
+          <img src="images_outing/IMG20260510204234.jpg" />
+          <img src="images_outing/IMG_20260510_23443730.jpeg" />
+          <img src="images_outing/IMG_20260510_23381250.jpeg" />
+          <img src="images_outing/IMG_20260511_130620_0837.jpg" />
+          <img src="images_outing/IMG20260510204441.jpg" />
+          <img src="images_outing/IMG20260510204524.jpg" />
+          <img src="images_outing/IMG20260510204023.jpg" />
+          <img src="images_outing/IMG20260510204243.jpg" />
+          <img src="images_outing/IMG20260510202245.jpg" />
+        </div>
+      </div>
+
+      <div class="navigation">
+        <button onclick="prevPage()">⬅ Previous</button>
+
+        <button onclick="nextPage()">Next ➡</button>
+      </div>
+    </section>
+
+    <!-- PAGE 6 -->
+    <section class="page hidden">
+      <div class="story-card">
+        <h2>💪 Back Where It All Started ❤️</h2>
+
+        <p>
+          Funny how the place where I first noticed you eventually became a
+          place where I daily get to spend time with my girlfriend. ❤️
+        </p>
+
+        <div class="gallery">
+          <img src="gym/IMG20260516203321.jpg" />
+          <img src="gym/IMG20260516203049.jpg" />
+          <img src="gym/IMG20260509202818.jpg" />
+          <img src="gym/IMG_20260606_173146.jpg" />
+          <img src="gym/IMG_20260606_174623.jpg" />
+          <img src="gym/IMG_20260609_131321.jpg" />
+        </div>
+      </div>
+
+      <div class="navigation">
+        <button onclick="prevPage()">⬅ Previous</button>
+
+        <button onclick="nextPage()">Next ➡</button>
+      </div>
+    </section>
+
+    <!-- PAGE 7 -->
+    <section class="page hidden">
+      <div class="story-card">
+        <h2>Things I Love About You ❤️</h2>
+
+        <div class="love-grid">
+          <div class="love-card">Your Smile 😊</div>
+
+          <div class="love-card">Your Eyes 👀</div>
+          <div class="love-card">Your Voice 🎶</div>
+          <div class="love-card">Your Hugs 🤗</div>
+          <div class="love-card">The way you care about me ❤️</div>
+          <div class="love-card">The way you understand me 🌸</div>
+          <div class="love-card">How you make me laugh 😂</div>
+          <div class="love-card">The way you look at me 🥹</div>
+          <div class="love-card">The peace I feel with you 🕊️</div>
+          <div class="love-card">The fact that you chose me ❤️</div>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <button onclick="prevPage()">⬅ Previous</button>
+
+        <button onclick="nextPage()">Next ➡</button>
+      </div>
+    </section>
+
+    <!-- PAGE 8 -->
+    <section class="page hidden">
+      <div class="story-card">
+        <h2>🏆 Awards For My Girl 🌸</h2>
+
+        <div class="love-grid">
+          <div class="love-card">👑 Queen Of My Heart</div>
+          <div class="love-card">❤️ Best Girlfriend Award</div>
+          <div class="love-card">😊 Best Smile Award</div>
+          <div class="love-card">🌸 Professional Mood Fixer</div>
+          <div class="love-card">🐻 Most Adorable Human</div>
+          <div class="love-card">🥹 Best Hug Award</div>
+          <div class="love-card">🌷 My Safe Place Award</div>
+          <div class="love-card">💪 Best Gym Partner Award</div>
+          <div class="love-card">🌟 My Favorite Notification Award</div>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <button onclick="prevPage()">⬅ Previous</button>
+
+        <button onclick="nextPage()">Next ➡</button>
+      </div>
+    </section>
+
+    <!-- PAGE 9 -->
+    <section class="page hidden">
+      <div class="story-card">
+        <h2>💌 Letter To Ishu ❤️</h2>
+
+        <div class="envelope" onclick="openLetter()">
+          <div class="envelope-front">💌 Tap To Open</div>
+
+          <div class="letter hidden">
+            <p id="typedLetter"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <button onclick="prevPage()">⬅ Previous</button>
+
+        <button onclick="nextPage()">Next ➡</button>
+      </div>
+    </section>
+
+    <!-- PAGE 10 -->
+    <section class="page hidden">
+      <div class="story-card">
+        <h2>Secret Messages ✨</h2>
+
+        <div class="love-grid">
+          <div class="love-card">Thank you for choosing me every day ❤️</div>
+
+          <div class="love-card">
+            I still smile because you're my girlfriend 🥹❤️
+          </div>
+
+          <div class="love-card">You are my favorite notification 🌟</div>
+
+          <div class="love-card">
+            Home doesn't feel like a place anymore… it feels like you ❤️
+          </div>
+
+          <div class="love-card">
+            If I had to choose again, I would still choose you ❤️
+          </div>
+
+          <div class="love-card">Our story has only just begun, Baby 🌻</div>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <button onclick="prevPage()">⬅ Previous</button>
+
+        <button onclick="nextPage()">Next ➡</button>
+      </div>
+    </section>
+
+    <!-- FINAL PAGE -->
+    <!-- FINAL PAGE -->
+    <section class="page hidden">
+      <div class="final-card">
+        <h1>Happy 2 Months, My Baby ❤️</h1>
+
+        <p>Thank you for making these two months so beautiful.</p>
+
+        <div class="counter">
+          <h2>We've Been Together For ❤️</h2>
+
+          <div id="daysCounter">Loading...</div>
+        </div>
+
+        <br />
+
+        <button onclick="secretSurprise()">One Last Thing ❤️</button>
+      </div>
+
+      <div class="navigation">
+        <button onclick="prevPage()">⬅ Go Back</button>
+      </div>
+    </section>
+
+    <!-- <div class="navigation">
+      <button onclick="prevPage()">⬅ Previous</button>
+
+      <button onclick="nextPage()">Next ➡</button>
+    </div> -->
+
+    <div class="flower" style="left: 5%">🌸</div>
+    <div class="flower" style="left: 15%">🌻</div>
+    <div class="flower" style="left: 30%">🌼</div>
+    <div class="flower" style="left: 45%">🌷</div>
+    <div class="flower" style="left: 60%">🌸</div>
+    <div class="flower" style="left: 75%">🌻</div>
+    <div class="flower" style="left: 90%">🌼</div>
+
+    <div class="sparkle" style="left: 20%">✨</div>
+    <div class="sparkle" style="left: 50%">✨</div>
+    <div class="sparkle" style="left: 80%">✨</div>
+
+    <div class="petal" style="left: 8%">🌸</div>
+    <div class="petal" style="left: 22%">🌷</div>
+    <div class="petal" style="left: 38%">🌸</div>
+    <div class="petal" style="left: 55%">🌼</div>
+    <div class="petal" style="left: 72%">🌷</div>
+    <div class="petal" style="left: 88%">🌸</div>
+
+    <div class="sunflower-corner top-left">🌻</div>
+    <div class="sunflower-corner top-right">🌻</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
